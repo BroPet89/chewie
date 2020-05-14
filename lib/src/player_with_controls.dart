@@ -39,8 +39,8 @@ class PlayerWithControls extends StatelessWidget {
               child: VideoPlayer(chewieController.videoPlayerController),
             ),
           ),
-          chewieController.overlay ?? Container(),
           _buildControls(context, chewieController),
+          chewieController.overlay ?? Container(),
         ],
       ),
     );
